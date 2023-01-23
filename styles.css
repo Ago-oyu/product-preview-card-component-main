@@ -1,0 +1,106 @@
+/*CSS reset*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*Styles*/
+body {
+  background-color: #f2ebe3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: .875rem;
+}
+
+body .preview {
+  display: -ms-grid;
+  display: grid;
+  margin: 1rem;
+  background-color: white;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+body .preview .product__info {
+  padding: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+body .preview .product__info .product__category {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #6c7289;
+  font-weight: 500;
+}
+
+body .preview .product__info .product__name {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  color: #1c232b;
+  line-height: 1.1;
+}
+
+body .preview .product__info .product__description {
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+body .preview .product__info .product__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .preview .product__info .product__prices .product__discounted-price {
+  color: #3c8067;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+
+body .preview .product__info .product__prices .product__original-price {
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+body .preview .product__info .button {
+  border: none;
+  background-color: #3c8067;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 15px 35px;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
