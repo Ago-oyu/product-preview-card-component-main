@@ -92,7 +92,7 @@ body .preview .product__info .button {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  padding: 15px 35px;
+  padding: 15px;
   border-radius: .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +100,19 @@ body .preview .product__info .button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
   cursor: pointer;
+}
+
+@media (min-width: 575px) {
+  .preview {
+    grid-auto-flow: column;
+    max-width: 600px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -91,14 +91,23 @@ body {
                 color: $clr-white;
                 font-family: $ff-sans;
                 font-weight: 700;
-                padding: 15px 35px;
+                padding: 15px;
                 border-radius: .5rem;
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 gap: 1rem;
                 cursor: pointer;
             }
         }
         
+    }
+}
+
+@media (min-width: 575px) {
+    .preview {
+        grid-auto-flow: column;
+        max-width: 600px;
+        grid-template-columns: 1fr 1fr;
     }
 }
